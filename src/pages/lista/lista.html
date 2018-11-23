@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons start>
+      <button ion-button>
+        Cancelar
+      </button>
+    </ion-buttons>
+    <ion-title>
+      Lista
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button>
+        Salvar
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content id="page3">
+  <ion-list id="lista-list2">
+      
+    <button ion-item block round color="light" (click) = "SetTexto(prov.notas[i].conteudo, i)" *ngFor="let list of prov.notas; let i = index" >
+          
+      {{prov.notas[i].nome}}
+      <span item-end>{{prov.notas[i].data}}</span>
+    </button>
+
+  </ion-list>
+</ion-content>
+

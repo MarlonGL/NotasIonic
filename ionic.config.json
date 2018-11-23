@@ -1,0 +1,8 @@
+{
+  "name": "NotasIonic",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular",
+  "pro_id": "807d6ae3"
+}

@@ -1,0 +1,31 @@
+
+<ion-header>
+  <ion-navbar>
+    <ion-buttons start>
+      <button ion-button icon-only (click) = "AbrirAlerta()">
+        <ion-icon  name="add"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>
+      Edição
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click) = AlertaDelete()>
+        <ion-icon name="trash"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page2">
+  <form id="ediO-form7">
+    <ion-item id="ediO-textarea3">
+      <ion-label>
+        
+      </ion-label>
+      <ion-textarea [(ngModel)] = "servico.texto"
+       name="saasa" rows="20" placeholder="" value="tentando" ></ion-textarea>
+
+
+    </ion-item>
+  </form>
+</ion-content>
