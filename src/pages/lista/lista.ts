@@ -14,11 +14,14 @@ export class ListaPage {
   constructor(public navCtrl: NavController, public prov:NserviceProvider) {
 
   }
-  SetTexto(cont:string, id:number){
+  SetTexto(cont:string, nom:string, id:number){
     this.prov.texto = cont;
     this.prov.atual = id;
+    this.prov.atNome = nom;
     console.log(this.prov.texto);
-    this.navCtrl.setRoot(EdiOPage);
+    //this.navCtrl.setRoot(EdiOPage);
+    this.navCtrl.parent.select(0);
+    
 
   }
   //<button ion-button block round color="light" (click) = "SetTexto(prov.notas[i].conteudo)">

@@ -16,7 +16,7 @@ export class BancoDadosProvider {
   }
   public getDB() {
     return this.sql.create({
-      name: 'notas3.db',
+      name: 'notas4.db',
       location: 'default'
     });
   }
@@ -42,7 +42,7 @@ export class BancoDadosProvider {
       .catch(e => console.error('Erro ao cria a tabela', e));
   }*/
   createTable(db: SQLiteObject){
-    let sql = 'CREATE TABLE IF NOT EXISTS notas(id INTEGER PRIMARY KEY AUTOINCREMENT, nome TEXT, conteudo TEXT, data TEXT, pos INTEGER)';
+    let sql = 'CREATE TABLE IF NOT EXISTS notas(id INTEGER PRIMARY KEY, nome TEXT, conteudo TEXT, data TEXT, pos INTEGER)';
     return db.executeSql(sql, []);
   }
 

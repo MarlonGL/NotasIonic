@@ -9,15 +9,20 @@
   <form id="config-form9">
     <ion-item id="config-toggle2">
       <ion-label>
-        Ordenar por data / titulo
+        Ordenar por Título ou Data
       </ion-label>
-      <ion-toggle color="positive" checked="false"></ion-toggle>
+      <ion-toggle [(ngModel)]= "ordem" name="asas" (ionChange)="ordenacao()" color="positive" checked="false"></ion-toggle>
     </ion-item>
     <ion-item id="config-checkbox1">
       <ion-label>
         Decrescente
       </ion-label>
-      <ion-checkbox></ion-checkbox>
+      <ion-checkbox [(ngModel)]= "decrescente" name="ffafa" (click)="ordenacao()"></ion-checkbox>
     </ion-item>
   </form>
 </ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>Feito por Marlon Garbo Lunardi</ion-title>
+  </ion-toolbar>
+</ion-footer>

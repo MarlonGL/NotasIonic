@@ -50,8 +50,11 @@ export class EdiOPage implements OnInit {
   }
   
   deletar(){
-    this.servico.remove(this.servico.atual + 1);
+    this.servico.remove(this.servico.atual, this.servico.atNome);
     console.log('deletei');
+    this.servico.select();
+    this.servico.reset();
+    this.servico.getItens();
   }
   AlertaDelete(){
     let addAlerta = this.alert.create({
