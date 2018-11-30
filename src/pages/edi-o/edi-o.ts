@@ -26,6 +26,7 @@ export class EdiOPage implements OnInit {
     adicionar(nome:string){
     this.servico.addNota(nome, this.servico.texto);
     console.log(this.servico.notas);
+    this.servico.select();
 
   }
   AbrirAlerta(){
